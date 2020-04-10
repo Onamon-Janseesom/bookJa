@@ -17,7 +17,6 @@
                   <th scope="col">To</th>
                   <th scope="col">Seat</th>
                   <th scope="col">Price</th>
-                  <th scope="col">Select</th>
                 </tr>
               </thead>
               <tbody>
@@ -28,13 +27,6 @@
                   <td>{{ flight.to }}</td>
                   <td>{{ flight.seat }}</td>
                   <td>{{ flight.price }}</td>
-                  <td>
-                    <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group" style="margin-bottom: 20px;">
-                                  <button id="test" class="btn btn-sm btn-outline-secondary" v-on:click="bookFlight(customer._id)">  <v-icon dark>check</v-icon></button>
-                                </div>
-                              </div>
-                  </td>
                 </tr>
               </tbody>
             </table>

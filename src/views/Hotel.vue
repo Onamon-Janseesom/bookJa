@@ -15,7 +15,7 @@
                   <th scope="col">room</th>
                   <th scope="col">Detail</th>
                   <th scope="col">Price</th>
-                  <th scope="col">Select</th>
+                 
                 </tr>
               </thead>
               <tbody>
@@ -24,16 +24,6 @@
                   <td>{{ hotel.room }}</td>
                   <td>{{ hotel.detail }}</td>
                   <td>{{ hotel.price }}</td>
-                  <td>
-                    <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group" style="margin-bottom: 20px;">
-                                   <router-link :to="{ name: 'Home', params: { hotelName: hotel.hotelName ,room :hotel.room} }">
-                                    <button class="btn btn-sm btn-outline-secondary" ><v-icon >check</v-icon></button>
-                                    </router-link>
-                                
-                                </div>
-                              </div>
-                  </td>
                 </tr>
               </tbody>
             </table>
